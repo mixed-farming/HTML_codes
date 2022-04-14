@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q3 Rain Animation</title>
+<style>
+body{
+background-color: black;
+}
+</style>
+</head>
+<body onload="rain()">
+<script type="text/javascript">
+var n = 1;
+function rain() {
+this.rain_len = 15;
+this.rain_ang = Math.PI/2.8;
+var ctx = myCanvas.getContext('2d');
+var x = Math.random() * 1000;
+var y = Math.random() * 500;
+ctx.strokeStyle = "#0099cc";
+ctx.beginPath();
+ctx.moveTo(x,y);
+ctx.lineTo(x-Math.cos(this.rain_ang)*this.rain_len,y-Math.sin(this.rain_ang)*this.rain_len);
+ctx.stroke();
+n = n + 1;
+if (n == 50) {
+ctx.clearRect(0, 0, 1500, 1000);
+n = 1;
+}
+var t = setTimeout(rain, 3);
+}
+</script>
+<canvas id="myCanvas" width="1500" height="600"></canvas>
+</body>
+</html>

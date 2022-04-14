@@ -1,0 +1,22 @@
+*{
+    padding:10px;
+    margin: 0px;
+    text-align: center;
+   }
+   p{
+    color: rgb(214, 25, 25);
+   }
+   h1{
+    color:yellow;
+   }
+   h2{
+    color:pink;
+   }
+   h4{
+    opacity: 0.4;
+   }
+   
+pre{
+    background-image: url(index1.jpg);
+    background-position: center;
+   } 

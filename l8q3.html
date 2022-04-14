@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Q3 Sort Three Numbers</title>
+</head>
+<body>
+<script type="text/javascript">
+ var a = parseInt(prompt("Enter first number :"));
+ var b = parseInt(prompt("Enter second number :"));
+ var c = parseInt(prompt("Enter third number :"));
+ if(a > b){
+ if(a > c){
+ max = a;
+ }
+ else{
+ max = c;
+ }
+ }
+ else if( b > a){
+ if(b > c){
+ max = b;
+ }
+ else{
+ max = c;
+ }
+ }
+ if(a > b && c > b){
+ min = b;
+ }
+ else if(b > a && c > a){
+ min = a;
+ }
+ else{
+ min = c;
+ }
+ mid = a + b + c - max - min;
+ alert("After sorting : " + min + " , " + mid + " , " + max);
+ </script>
+</body>
+</html>

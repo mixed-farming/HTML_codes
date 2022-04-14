@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Q5 Smiley Face :)</title>
+</head>
+<body>
+ <canvas id="myCanvas" width="400" height="250">
+ <script type="text/javascript">
+ var c = document.getElementById("myCanvas");
+ var ctx = c.getContext("2d");
+ ctx.beginPath();
+ ctx.arc(100, 75, 70, 0, 2 * Math.PI);
+ ctx.stroke();ctx.fillStyle = " #FFFF00";
+ ctx.fill();
+ var d = document.getElementById("myCanvas");
+ var dtx = d.getContext("2d");
+ dtx.beginPath();
+ dtx.arc(75, 55, 5, 0, 2 * Math.PI);
+ dtx.stroke();
+ dtx.fillStyle = "red";
+ dtx.fill();
+ var e = document.getElementById("myCanvas");
+ var etx = e.getContext("2d");
+ etx.beginPath();
+ etx.arc(125, 55, 5, 0, 2 * Math.PI);
+ etx.stroke();
+ etx.fillStyle = "red";
+ etx.fill();
+ var f = document.getElementById("myCanvas");
+ var ftx = f.getContext("2d");
+ ftx.beginPath();
+ ftx.arc(100, 80, 30, 0.3 * Math.PI, 0.7 * Math.PI);
+ ftx.stroke();
+ </script>
+ </canvas>
+</body>
+</html>
