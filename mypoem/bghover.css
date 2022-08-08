@@ -1,13 +1,23 @@
 
 body{
-  background-image: url(stars6.jpg);
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(stars6.jpg);
   background-size: cover;
 }
 
-h1,h3{
-  color:orange;
+h2,h3{
+  color:rgb(0, 0, 0);
+  color:rgb(207, 255, 96);
  }
 
+marquee{
+  border-radius: 100px;
+}
+
+p{
+  font-family:cursive ;
+  font-size: 90%;
+  cursor: none;
+ }
  /* h3
  {
   color:black;
