@@ -51,16 +51,36 @@
             font-size: 18px;
             padding: 16px 32px;
         }
+
+        .glow {
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(34, 255, 0), 0 0 40px rgb(34, 255, 0), 0 0 50px rgb(34, 255, 0), 0 0 60px rgb(34, 255, 0), 0 0 70px rgb(34, 255, 0);
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px rgb(207, 255, 96), 0 0 40px rgb(207, 255, 96), 0 0 50px rgb(207, 255, 96), 0 0 60px rgb(207, 255, 96), 0 0 70px rgb(207, 255, 96), 0 0 80px rgb(207, 255, 96);
+            }
+        }
     </style>
     <link rel="stylesheet" href="bghover.css">
 
 </head>
+
 <body>
     <bg></bg>
     <div class="container">
-        <marquee direction="left" behavior="repeat" scrollamount="10" style="border:BLACK 5px double" border-radius=5px>
+        <!-- <marquee direction="left" behavior="repeat" scrollamount="10" style="border:BLACK 5px double" border-radius=5px>
         <h2><u>My 1x5x10 dimensional companion</u></h2>
-        </marquee>
+        </marquee> -->
+
+        <h2 class="glow">My 1x5x10 dimensional companion</h2>
         <img src="boy4.jpeg" alt="Boy hugging pillow while sleeping" class="image">
         <div class="middle">
             <div class="text">
@@ -120,4 +140,5 @@
             </p><b>-Manoj M Mallya</b></h2>
     </div>
 </body>
+
 </html>
